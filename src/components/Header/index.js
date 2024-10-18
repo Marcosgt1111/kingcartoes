@@ -3,8 +3,9 @@ import Image from 'next/image';
 
 const Header = () => {
     return (
-        <header>
-            <div>
+        <header className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/header-bg.jpg')" }}>
+
+            <div className="ml-4">
                 <Link
                     href="/">
                         <Image src="/images/logo.svg" alt="Logo" width={150} height={50}/>
@@ -12,7 +13,7 @@ const Header = () => {
             </div>
 
             <div className="text-header">
-                <h1 className="text-4xl font-bold text-red-600">Uma apresentação completa <br/> com o cartão correto.</h1>
+                <h1 className="text-4xl font-bold text-yellow-400 text-center">Uma apresentação completa <br/> com o cartão correto.</h1>
             </div>
         </header>
     );
