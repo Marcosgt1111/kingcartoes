@@ -12,14 +12,14 @@ const Header = () => {
                 </Link>
             </div>
 
-            <div className="text-header">
-                <h1 className="text-6xl font-bold text-red-50 text-center py-5 drop-shadow-lg ">Uma apresentação completa <br/> com o cartão correto.</h1>
+            <div className="text-header font-custom">
+                <h1 className="text-6xl font-bold text-red-500 text-center py-5 drop-shadow-lg ">Uma apresentação completa <br/> com o cartão correto.</h1>
             </div>
 
-            <div className="">
+            <div className="flex justify-center items-center min-h-screen">
                 <Link
                     href="/">
-                        <Image src="/images/cartaodevisita.png" alt="produto" width={150} height={50}/>
+                        <Image src="/images/cartaodevisita.png" alt="produto" width={500} height={50} className="mt-60 transition-transform duration-500 ease-in-out transform hover:scale-110"/>
                 </Link>
             </div>
         </header>
