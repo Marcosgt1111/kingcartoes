@@ -8,7 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        custom: ['"CustomFont"', 'Comic Sans MS', 'sans-serif'],
+        archivo: ["Archivo Black", 'sans-serif'],
+        arima: ['Arima', 'system-ui'],
+
       },
       colors: {
         background: "var(--background)",
