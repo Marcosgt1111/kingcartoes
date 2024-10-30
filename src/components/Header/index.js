@@ -14,7 +14,7 @@ const Header = () => {
                 </div>
 
                 <div className="text-header font-arima text-center mt-8 md:mt-16">
-                    <h1 className="text-4xl md:text-6xl font-bold text-red-500 py-5 drop-shadow-lg">
+                    <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-black to-orange-800 bg-clip-text text-transparent text-red-500 py-5 drop-shadow-lg">
                         Uma apresentação completa <br /> com o cartão correto.
                     </h1>
                 </div>
