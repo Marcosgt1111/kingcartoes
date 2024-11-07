@@ -21,7 +21,7 @@ const Header = () => {
 
                 <div className="mt-8 md:mt-16">
                     <Link href="">
-                        <Image src="/images/cartaodevisita.png" alt="produto" width={500} height={50}
+                        <Image src="/images/cartaodevisita.png" alt="produtoking" width={500} height={50}
                                className="transition-transform duration-500 ease-in-out transform hover:scale-110" />
                     </Link>
                 </div>
