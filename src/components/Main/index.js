@@ -52,6 +52,10 @@ const Main = () => {
                 <p> Controlar seu negocio </p>
             </div>
 
+            <div>
+                <p> Faça já seu Orçamento </p>
+            </div>
+
         </main>
     );
 };
