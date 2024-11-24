@@ -33,6 +33,7 @@ const Main = () => {
                             Folhetos e Panfletos
                         </h2>
                         <p> Ideal para seu negocio </p>
+                        <p>á partir de <strong>R$ 80,00</strong></p>
                     </div>
                     <div className="mt-4 mb-12">
                         <Link href="">
@@ -47,6 +48,7 @@ const Main = () => {
                             Banners
                         </h2>
                         <p> Divulge seus produtos </p>
+                        <p>á partir de <strong>R$ 80,00</strong></p>
                     </div>
                     <div className="mt-4 mb-12">
                         <Link href="">
@@ -61,6 +63,7 @@ const Main = () => {
                             Placas
                         </h2>
                         <p> Uma fachada chamativa </p>
+                        <p>á partir de <strong>R$ 80,00</strong></p>
                     </div>
                     <div className="mt-4 mb-12">
                         <Link href="">
@@ -75,6 +78,7 @@ const Main = () => {
                             Imãs de Geladeira
                         </h2>
                         <p> Seu cliente merece um brinde </p>
+                        <p>á partir de <strong>R$ 80,00</strong></p>
                     </div>
                     <div className="mt-4 mb-12">
                         <Link href="">
@@ -89,6 +93,7 @@ const Main = () => {
                             Blocos e Talões
                         </h2>
                         <p> Organize seu negocio </p>
+                        <p>á partir de <strong>R$ 80,00</strong></p>
                     </div>
                     <div className="mt-4 mb-12">
                         <Link href="">
