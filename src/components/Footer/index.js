@@ -13,11 +13,11 @@ const Footer =  () => {
             </div>
 
             <div className="text-red-500">
-                <ul>
-                    <li>Desenvolvimento de Sites</li>
-                    <li>Artes Digitais</li>
-                    <li>Criação de logomarcas</li>
-                </ul>
+                <h2>
+                    <strong>Desenvolvimento</strong> de sites, <br />artes gráficas e digitais
+                </h2>
+
+                <p>Quer transformar suas ideias em algo impactante para seu trabalho, <br />ou sua empressa. Aqui temos a solução para você </p>
             </div>
 
         </footer>
