@@ -12,12 +12,12 @@ const Footer =  () => {
                 </Link>
             </div>
 
-            <div className="text-red-500">
+            <div className="text-2xl pt-24 ml-24 text-red-500">
                 <h2>
                     <strong>Desenvolvimento</strong> de sites, <br />artes gráficas e digitais
                 </h2>
 
-                <p>Quer transformar suas ideias em algo impactante para seu trabalho, <br />ou sua empressa. Aqui temos a solução para você </p>
+                <p>Quer transformar suas ideias em algo impactante para seu trabalho, <br />ou sua empressa. Aqui temos a solução para você. </p>
             </div>
 
         </footer>
