@@ -12,12 +12,12 @@ const Footer =  () => {
                 </Link>
             </div>
 
-            <div className="text-2xl pt-24 ml-24 text-red-500">
-                <h2>
-                    <strong>Desenvolvimento</strong> de sites, <br />artes gráficas e digitais
+            <div className="text-2xl pt-24 ml-24 font-bold bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent text-red-500 drop-shadow-lg">
+                <h2 className="text-4xl">
+                    <strong>Desenvolvimento</strong> de sites, <br />artes gráficas e digitais.
                 </h2>
 
-                <p>Quer transformar suas ideias em algo impactante para seu trabalho, <br />ou sua empressa. Aqui temos a solução para você. </p>
+                <p className="text-2xl mt-4">Quer transformar suas ideias em algo impactante para seu trabalho, <br />ou sua empressa. Aqui temos a solução para você. </p>
             </div>
 
         </footer>
