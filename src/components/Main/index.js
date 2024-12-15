@@ -14,7 +14,9 @@ const Main = () => {
     sectionRefs.current = [];
 
     useEffect(() => {
+        console.log("useEffect executed");
         sectionRefs.current.forEach((section, index) => {
+            console.log(`Animating section ${index}`);
             gsap.from(section, {
                 opacity: 0,
                 y: 50,
@@ -46,7 +48,7 @@ const Main = () => {
             </div>
 
             <div className="flex flex-col items-center">
-                <div ref={addToRefs} className="flex flex-row items-center justify-center gap-8">
+                <section ref={addToRefs} className="flex flex-row items-center justify-center gap-8" suppressHydrationWarning>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold leading-tight text-orange-700">
                             Cartões de Visita
@@ -58,9 +60,9 @@ const Main = () => {
                             <Image src="/images/cartao_cliente.png" alt="cartaodevisita" width={300} height={50} />
                         </Link>
                     </div>
-                </div>
+                </section>
 
-                <div ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8">
+                <section ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold leading-tight text-orange-700">
                             Folhetos e Panfletos
@@ -73,9 +75,9 @@ const Main = () => {
                             <Image src="/images/panfleto.png" alt="panfleto" width={300} height={50} />
                         </Link>
                     </div>
-                </div>
+                </section>
 
-                <div ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8">
+                <section ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold leading-tight text-orange-700">
                             Banners
@@ -88,9 +90,9 @@ const Main = () => {
                             <Image src="/images/banner.png" alt="banner" width={300} height={50} />
                         </Link>
                     </div>
-                </div>
+                </section>
 
-                <div ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8">
+                <section ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold leading-tight text-orange-700">
                             Placas
@@ -103,9 +105,9 @@ const Main = () => {
                             <Image src="/images/placas.png" alt="placas" width={300} height={50} />
                         </Link>
                     </div>
-                </div>
+                </section>
 
-                <div ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8">
+                <section ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold leading-tight text-orange-700">
                             Imãs de Geladeira
@@ -118,9 +120,9 @@ const Main = () => {
                             <Image src="/images/ima.png" alt="ima" width={300} height={50} />
                         </Link>
                     </div>
-                </div>
+                </section>
 
-                <div ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8">
+                <section ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold leading-tight text-orange-700">
                             Blocos e Talões
@@ -133,7 +135,7 @@ const Main = () => {
                             <Image src="/images/talao.png" alt="talao" width={300} height={50} />
                         </Link>
                     </div>
-                </div>
+                </section>
             </div>
 
             <div className="flex flex-row items-center justify-center mt-8 md:mt-16">
