@@ -2,42 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-// Registre o plugin ScrollTrigger
-gsap.registerPlugin(ScrollTrigger);
 
 const Main = () => {
-    const sectionRefs = useRef([]);
-    sectionRefs.current = [];
-
-    useEffect(() => {
-        console.log("useEffect executed");
-        sectionRefs.current.forEach((section, index) => {
-            console.log(`Animating section ${index}`);
-            gsap.from(section, {
-                opacity: 0,
-                y: 50,
-                duration: 1,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: section,
-                    start: "top 80%", // Inicia a animação quando o topo da seção atinge 80% da viewport
-                    end: "bottom 20%", // Termina a animação quando o fundo da seção atinge 20% da viewport
-                    toggleActions: "play none none none", // Reproduz a animação na entrada
-                },
-            });
-        });
-    }, []);
-
-    const addToRefs = (el) => {
-        if (el && !sectionRefs.current.includes(el)) {
-            sectionRefs.current.push(el);
-        }
-    };
-
     return (
         <main className="bg-gradient-to-r from-amber-200 to-yellow-100">
             <div className="p-14">
@@ -48,7 +14,7 @@ const Main = () => {
             </div>
 
             <div className="flex flex-col items-center">
-                <section ref={addToRefs} className="flex flex-row items-center justify-center gap-8" suppressHydrationWarning>
+                <section className="flex flex-row items-center justify-center gap-8" suppressHydrationWarning>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold leading-tight text-orange-700">
                             Cartões de Visita
@@ -62,7 +28,7 @@ const Main = () => {
                     </div>
                 </section>
 
-                <section ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
+                <section className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold leading-tight text-orange-700">
                             Folhetos e Panfletos
@@ -77,7 +43,7 @@ const Main = () => {
                     </div>
                 </section>
 
-                <section ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
+                <section className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold leading-tight text-orange-700">
                             Banners
@@ -92,7 +58,7 @@ const Main = () => {
                     </div>
                 </section>
 
-                <section ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
+                <section className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold leading-tight text-orange-700">
                             Placas
@@ -107,7 +73,7 @@ const Main = () => {
                     </div>
                 </section>
 
-                <section ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
+                <section className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold leading-tight text-orange-700">
                             Imãs de Geladeira
@@ -122,7 +88,7 @@ const Main = () => {
                     </div>
                 </section>
 
-                <section ref={addToRefs} className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
+                <section className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
                     <div className="text-center">
                         <h2 className="text-3xl font-bold leading-tight text-orange-700">
                             Blocos e Talões
@@ -141,10 +107,10 @@ const Main = () => {
             <div className="flex flex-row items-center justify-center mt-8 md:mt-16">
                 <button
                     className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
-                    <span
-                        className="relative px-14 py-4 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                        Solicite seu Orçamento
-                    </span>
+          <span
+              className="relative px-14 py-4 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+            Solicite seu Orçamento
+          </span>
                 </button>
             </div>
         </main>
