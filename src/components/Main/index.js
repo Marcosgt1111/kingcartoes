@@ -1,12 +1,18 @@
-"use client";
+'use client';
 
 import Link from "next/link";
 import Image from "next/image";
 import Scrolltriggered from "@/components/Scrolltriggered";
-
-
+import React from 'react';
 
 const Main = () => {
+    const phoneNumber = '5512981779189';
+
+    const handleClick = () => {
+        const url = `https://wa.me/${phoneNumber}`;
+        window.open(url, '_blank');
+    };
+
     return (
         <main className="bg-gradient-to-r from-amber-200 to-yellow-100">
             <div className="p-14">
@@ -40,7 +46,7 @@ const Main = () => {
                                 Folhetos e Panfletos
                             </h2>
                             <p> Ideal para seu negocio </p>
-                            <p>á partir de <strong>R$ 80,00</strong></p>
+                            <p>á partir de <strong>R$ 450,00</strong></p>
                         </div>
                         <div className="mt-4 mb-12">
                             <Link href="">
@@ -57,7 +63,7 @@ const Main = () => {
                                 Banners
                             </h2>
                             <p> Divulge seus produtos </p>
-                            <p>á partir de <strong>R$ 80,00</strong></p>
+                            <p>á partir de <strong>R$ 120,00</strong></p>
                         </div>
                         <div className="mt-4 mb-12">
                             <Link href="">
@@ -74,7 +80,7 @@ const Main = () => {
                                 Placas
                             </h2>
                             <p> Uma fachada chamativa </p>
-                            <p>á partir de <strong>R$ 80,00</strong></p>
+                            <p>á partir de <strong>R$ 50,00</strong></p>
                         </div>
                         <div className="mt-4 mb-12">
                             <Link href="">
@@ -85,20 +91,20 @@ const Main = () => {
                 </Scrolltriggered>
 
                 <Scrolltriggered>
-                <section className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
-                    <div className="text-center">
-                        <h2 className="text-3xl font-bold leading-tight text-orange-700">
-                            Imãs de Geladeira
-                        </h2>
-                        <p> Seu cliente merece um brinde </p>
-                        <p>á partir de <strong>R$ 80,00</strong></p>
-                    </div>
-                    <div className="mt-4 mb-12">
-                        <Link href="">
-                            <Image src="/images/ima.png" alt="ima" width={300} height={50} />
-                        </Link>
-                    </div>
-                </section>
+                    <section className="flex flex-row items-center justify-center gap-8 mt-8" suppressHydrationWarning>
+                        <div className="text-center">
+                            <h2 className="text-3xl font-bold leading-tight text-orange-700">
+                                Imãs de Geladeira
+                            </h2>
+                            <p> Seu cliente merece um brinde </p>
+                            <p>á partir de <strong>R$ 350,00</strong></p>
+                        </div>
+                        <div className="mt-4 mb-12">
+                            <Link href="">
+                                <Image src="/images/ima.png" alt="ima" width={300} height={50} />
+                            </Link>
+                        </div>
+                    </section>
                 </Scrolltriggered>
 
                 <Scrolltriggered>
@@ -108,7 +114,7 @@ const Main = () => {
                                 Blocos e Talões
                             </h2>
                             <p> Organize seu negocio </p>
-                            <p>á partir de <strong>R$ 80,00</strong></p>
+                            <p>á partir de <strong>R$ 280,00</strong></p>
                         </div>
                         <div className="mt-4 mb-12">
                             <Link href="">
@@ -121,6 +127,7 @@ const Main = () => {
 
             <div className="flex flex-row items-center justify-center mt-8 md:mt-16">
                 <button
+                    onClick={handleClick}
                     className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
           <span
               className="relative px-14 py-4 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">

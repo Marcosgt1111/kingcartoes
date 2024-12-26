@@ -1,7 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import React from 'react';
 
 const Header = () => {
+    const phoneNumber = '5512988039200';
+
+    const handleClick = () => {
+        const url = `https://wa.me/${phoneNumber}`;
+        window.open(url, '_blank');
+    };
+
     return (
         <header className="relative bg-cover bg-center bg-no-repeat min-h-screen"
                 style={{backgroundImage: "url('/images/header-bg.jpg')"}}>
@@ -27,7 +35,10 @@ const Header = () => {
                 </div>
 
                 <div className="mt-8 md:mt-16">
-                    <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                    <button
+                        onClick={handleClick}
+                        className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
+                    >
                         <span className="relative px-14 py-4 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                             Peça Já o seu!
                         </span>
