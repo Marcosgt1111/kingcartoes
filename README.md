@@ -1,3 +1,5 @@
+![Descrição](file:///C:/Users/Marcosgtdev/Documents/ShareX/Screenshots/2024-12/chrome_PQW20tVVdx.gif)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
