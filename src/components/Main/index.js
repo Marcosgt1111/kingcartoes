@@ -29,7 +29,7 @@ const Main = () => {
                             <h2 className="text-3xl font-bold leading-tight text-orange-700">
                                 Cartões de Visita
                             </h2>
-                            <p>á partir de <strong>R$ 80,00</strong></p>
+                            <p>á partir de <strong>R$ 90,00</strong></p>
                         </div>
                         <div className="mt-4">
                             <Link href="">
@@ -46,7 +46,7 @@ const Main = () => {
                                 Folhetos e Panfletos
                             </h2>
                             <p> Ideal para seu negocio </p>
-                            <p>á partir de <strong>R$ 450,00</strong></p>
+                            <p>á partir de <strong>R$ 350,00</strong></p>
                         </div>
                         <div className="mt-4 mb-12">
                             <Link href="">
