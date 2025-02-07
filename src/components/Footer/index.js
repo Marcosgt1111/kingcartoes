@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Form from "@/components/Form";
 
 const Footer =  () => {
     return (
@@ -19,6 +20,8 @@ const Footer =  () => {
 
                 <p className="text-2xl mt-4">Quer transformar suas ideias em algo impactante para seu trabalho, <br />ou sua empressa. Aqui temos a solução para você. </p>
             </div>
+
+            <Form />
 
         </footer>
     )
