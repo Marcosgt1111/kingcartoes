@@ -1,9 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-surface: #141414;
+  --bg-subtle: #0d0d0d;
+  --bg-deepest: #070707;
+  --gold: #c9a84c;
+  --gold-muted: rgba(201, 168, 76, 0.12);
+  --text-primary: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --text-hint: rgba(255, 255, 255, 0.35);
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-gold: rgba(201, 168, 76, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+section[id] {
+  scroll-margin-top: 64px;
+}
+
+::selection {
+  background: rgba(201, 168, 76, 0.3);
+  color: #fff;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-screen-xl px-5 md:px-8 lg:px-16;
+  }
+
+  .section-label {
+    @apply text-[10px] font-semibold uppercase tracking-[0.22em] text-gold;
+  }
+
+  .section-title {
+    @apply mt-2 text-[clamp(22px,3.4vw,30px)] font-bold leading-tight text-white;
+  }
+
+  .section-subtitle {
+    @apply mt-2 max-w-md text-[13px] leading-relaxed text-white/50;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center rounded-md bg-gold px-4 py-2 text-[13px] font-bold text-black transition-colors duration-200 hover:bg-[#d8b95c];
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-md border border-white/[0.15] px-4 py-2 text-[13px] font-medium text-white transition-colors duration-200 hover:border-gold/50 hover:text-gold;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
